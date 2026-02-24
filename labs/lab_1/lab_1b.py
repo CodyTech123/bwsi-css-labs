@@ -20,7 +20,7 @@ def sanitize_input(text: str):
 def sanp(y):
     while True:
         x = input(y)
-        if y not in ('add', 'subtract', 'multiply', 'divide'):
+        if y in ('add', 'subtract', 'multiply', 'divide'):
             return x
         else:
             print("try again")
