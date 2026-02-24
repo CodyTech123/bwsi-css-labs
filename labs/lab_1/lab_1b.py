@@ -16,7 +16,6 @@ def sanitize_input(text: str):
             return x
         except ValueError:
             print("Try again")
-        #workpls
             
 def sanp(y):
     while True:
