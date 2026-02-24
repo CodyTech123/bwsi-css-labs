@@ -9,6 +9,15 @@ and prints the result to the terminal window.
 
 """
 
+def sanitize_input(text: str):
+    while True:
+        try:
+            x = float(input(text))
+            return x
+        except ValueError:
+            print("Try again")
+
+
 def simple_calculator(operation: str, num1: float, num2: float) -> float:
     """
     Function that takes in two numbers and an operation (add, subtract, multiply, divide),
@@ -23,6 +32,7 @@ def simple_calculator(operation: str, num1: float, num2: float) -> float:
         float: The result of the operation.
     """
 
+    
     if operation == "add":
         return num1 + num2
     elif operation == "subtract":
