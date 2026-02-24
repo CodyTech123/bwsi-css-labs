@@ -17,6 +17,14 @@ def sanitize_input(text: str):
         except ValueError:
             print("Try again")
         #workpls
+            
+def sanp(y):
+    while True:
+        x = input(y)
+        if y not in ('add', 'subtract', 'multiply', 'divide'):
+            return x
+        else:
+            print("try again")
 
 
 def simple_calculator(operation: str, num1: float, num2: float) -> float:
